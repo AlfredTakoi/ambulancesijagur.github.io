@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+
+  .banner-content-img img {
+    box-shadow: rgba(97, 118, 163, 0.4) 5px 5px,
+      rgba(97, 118, 163, 0.3) 10px 10px, rgba(97, 118, 163, 0.2) 15px 15px,
+      rgba(97, 118, 163, 0.1) 20px 20px, rgba(97, 118, 163, 0.05) 25px 25px;
+  }
+
+  .banner {
+    background-image: url("./../assets/img/img-1.jpeg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+  }
+
+	.banner::after{
+		content: "";
+		position: absolute;
+    	top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.7);
+		opacity: .7;
+		z-index: 1;
+	}
+
+	.banner-content {
+		position: absolute;
+		bottom: 0;
+		z-index: 100;
+		right: 11px;
+		left: 11px;
+
+		@media (min-width:640px){
+			right: 50px;
+			left: 50px;
+		}
+	}
+
+	.banner-content h1 {
+		line-height: 70px;
+
+		@media (max-width:640px){
+			line-height: 45px;
+		}
+	}
+
+	.about-content-text h1:after {
+		content: "";
+		width:68px;
+		height: 3px;
+		display: block;
+		margin-top: 18px;
+		@apply bg-primary
+	}
+
+	.visi-content-text h1:after {
+		content: "";
+		width:40px;
+		height: 3px;
+		display: block;
+		margin-top: 10px;
+		@apply bg-primary
+	}
+
+	.contact-content-text h1:after {
+		content: "";
+		width:68px;
+		height: 3px;
+		display: block;
+		margin-top: 18px;
+		@apply bg-primary
+	}
+
+	.navbar-mobile.active {
+		@apply translate-x-[475px]
+	}
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./../dist/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="relative">
+    <div class="navbar-mobile bg-white fixed h-screen z-[900] block sm:hidden top-0 w-3/4 right-0 transition-all transform translate-x-[475px] duration-700">
+      <ul class="navar-list mt-24 px-3 h-full">
+        <li class="navbar-item py-2">
+          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Tentang</a> 
+        </li>
+        <li class="navbar-item py-2">
+          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Visi Misi</a> 
+        </li>
+        <li class="navbar-item py-2">
+          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Pelayanan</a> 
+        </li>
+        <li class="navbar-item py-2">
+          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Kontak</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar bg-white py-2 shadow-md sticky top-0 z-[1000]">
+      <div class="container mx-auto px-3">
+        <div class="navbar-content flex justify-between items-center">
+          <div class="navbar-logo w-16 h-16">
+            <img src="./assets/img/logo.jpg" alt="logo-img" class="w-full h-full">
+          </div>
+          <div class="navbar-toggle cursor-pointer block sm:hidden">
+            <button class="w-14 h-14 relative focus:outline-none rounded">
+                <div class="block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                    <span  class="block absolute h-0.5 w-7 text-white bg-slate-500 transform transition duration-500 ease-in-out -translate-y-1.5" ></span>
+                    <span  class="block absolute right-0 h-0.5 w-5 text-white bg-slate-500   transform transition duration-500 ease-in-out"></span>
+                    <span  class="block absolute  h-0.5 w-7 text-white bg-slate-500 transform  transition duration-500 ease-in-out translate-y-1.5"></span>
+                </div>
+            </button>
+          </div>
+          <div class="navbar-menu hidden sm:block">
+            <ul class="navar-list inline-flex gap-10">
+              <li class="navbar-item">
+                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Tentang</a> 
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Visi Misi</a> 
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Pelayanan</a> 
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner h-[577px] w-full py-16">
+      <div class="container mx-auto px-3 h-full">
+        <div class="banner-content grid grid-cols-1 sm:grid-cols-2 items-center h-full">
+          <div class="banner-content-text">
+            <h1 class="text-4xl text-center sm:text-left sm:text-6xl w-full sm:w-[585px] font-semibold mb-5 leading-tight text-white">Ambulance Sijagur Reborn  Kota Bandung</h1>
+            <p class="text-center sm:text-left mb-5 text-slate-300">Penyelamatan darurat dengan ambulans terpercaya. Perawatan ahli. Keamanan dan tanggap cepat. Hubungi kami sekarang!</p>
+            <div class="banner-cotent-button flex">
+              <a href="" class="inline-block m-auto sm:m-0 text-center sm:text-left py-3 text-white px-10 bg-primary rounded-full hover:opacity-90 transition-all">Hubungi Kami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about py-16 bg-fivary bg-opacity-25" id="about">
+      <div class="container mx-auto px-3">
+        <div class="about-content grid grid-cols-1 sm:grid-cols-2 gap-20 items-center">
+          <div class="about-content-text">
+            <h1 class="text-3xl font-semibold mb-5 leading-tight uppercase">Tentang Kami</h1>
+            <p class="leading-loose">Kami adalah sebuah perusahaan ambulans yang berdedikasi untuk memberikan layanan penyelamatan jiwa yang terpercaya. Dengan tim yang terlatih dan berpengalaman, kami berkomitmen untuk memberikan perawatan medis darurat yang cepat, tepat, dan profesional. Keamanan dan kenyamanan pasien kami adalah prioritas utama kami, dan kami mengutamakan keahlian serta keramahan dalam setiap interaksi dengan pasien dan keluarga mereka. </p>
+          </div> 
+          <div class="about-content-img">
+            <div class="img-box  shadow-xl">
+              <img src="./assets/img/img-5-edited.jpeg" alt="about-img" class="w-full h-full object-cover rounded-3xl">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="visi py-16 bg-white bg-opacity-25" id="visi">
+      <div class="container mx-auto px-3">
+        <div class="visi-content grid grid-cols-1 sm:grid-cols-2 gap-20 items-center">
+          <div class="visi-content-img order-2 sm:order-1">
+            <div class="img-box  shadow-xl">
+              <img src="./assets/img/img-2.jpeg" alt="visi-img" class="w-full h-full object-cover rounded-3xl">
+            </div>
+          </div>
+          <div class="visi-content-text order-1 sm:order-2">
+            <div class="mb-5">
+              <h1 class="text-3xl font-semibold mb-5 leading-tight uppercase">Visi</h1>
+              <p class="leading-loose">Menjadi petugas Ambulans yang gagah, berani, berwibawa, dan santun dalam pelayanan kepada setiap lapisan masyarakat</p>
+            </div> 
+            <div class="mb-5">
+              <h1 class="text-3xl font-semibold mb-5 leading-tight uppercase">Misi</h1>
+              <ul class="leading-loose list-disc list-inside">
+                <li>Menyelenggarakan pelayanan Ambulans yang responsive</li>
+                <li>Memberikan pelayanan yang nyaman</li>
+                <li>Menjadikan unit terkait dalam pelayanan sebagai  Team Work</li>
+                <li>Senantiasa Menjalankan tugas dan pelayanan dengan etika, tertib, dan berwibawa</li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section class="services bg-fivary bg-opacity-25 py-16" id="services">
+      <div class="container mx-auto px-3">
+        <div class="services-header text-center mb-10">
+          <h1 class="text-3xl font-semibold mb-5 leading-tight uppercase">Pelayanan Kami</h1>
+          <p class="text-slate-600 w-full sm:w-[600px] m-auto">Kami, Layanan Ambulans Terpercaya, hadir untuk memberikan layanan ambulans yang dapat diandalkan dalam situasi darurat.</p>
+        </div>
+        <div class="services-content grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <div class="services-content-card text-center">
+            <div class="w-20 h-20 bg-fivary m-auto flex rounded-full mb-3">
+              <i class="fa-solid fa-business-time m-auto text-3xl"></i>
+            </div>
+            <h2 class="text-xl font-semibold mb-3">Pelayanan 24 Jam</h2>
+            <p class="text-slate-600">Kami siap merespons panggilan darurat Anda setiap saat, siang maupun malam. Tim kami akan tiba tepat waktu dengan ambulans yang dilengkapi peralatan medis canggih.</p>
+          </div>
+          <div class="services-content-card text-center">
+            <div class="w-20 h-20 bg-fivary m-auto flex rounded-full mb-3">
+              <i class="fa-solid fa-truck-medical m-auto text-3xl"></i>
+            </div>
+            <h2 class="text-xl font-semibold mb-3">Transportasi Medis</h2>
+            <p class="text-slate-600">Kami menyediakan transportasi medis aman dan nyaman untuk pasien yang membutuhkan perpindahan antara rumah sakit, klinik, atau tempat perawatan medis lainnya.</p>
+          </div>
+          <div class="services-content-card text-center">
+            <div class="w-20 h-20 bg-fivary m-auto flex rounded-full mb-3">
+              <i class="fa-solid fa-kit-medical m-auto text-3xl"></i>
+            </div>
+            <h2 class="text-xl font-semibold mb-3">Penanganan Kasus Darurat</h2>
+            <p class="text-slate-600">Tim medis kami terlatih untuk menangani kasus-kasus darurat, termasuk cedera parah, serangan jantung, kecelakaan, atau keadaan medis mendesak lainnya.</p>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <section class="contact py-16">
+      <div class="container mx-auto px-3">
+        <div class="contact-content grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div class="contact-content-text">
+            <h1 class="text-3xl font-semibold mb-10 leading-tight uppercase">Hubungi Kami</h1>
+            <div class="contact-content-box flex items-center gap-3 mb-8">
+              <i class="fa-solid fa-location-dot text-4xl"></i>
+              <div class="ml-2">
+                <a href="#" class="text-xl">253 Destin Light Suite 931 </a>
+              </div> 
+            </div>
+            <div class="contact-content-box flex items-center gap-3 mb-8">
+              <i class="fa-solid fa-phone text-3xl"></i>
+              <div class="ml-2">
+                <a href="#" class="text-xl">085770025143</a>
+              </div> 
+            </div>
+            <div class="contact-content-box flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-3xl"></i>
+              <div class="ml-2">
+                <a href="#" class="text-xl">ambulance_sijagur@gmail.com</a>
+              </div> 
+            </div>
+          </div>
+          <div class="contact-content-form grid grid-cols-1 gap-2">
+            <div class="form-group">
+              <label for="" class="block font-semibold">Email</label> 
+              <input type="text" class="focus:outline-none p-2 w-full border focus:border-primary rounded">
+            </div>
+            <div class="form-group">
+              <label for="" class="block font-semibold">Subject</label> 
+              <input type="email" class="focus:outline-none p-2 w-full border focus:border-primary rounded">
+            </div>
+            <div class="form-group">
+              <label for="" class="block font-semibold">Message</label> 
+              <textarea name="" id="" cols="30" rows="5" class="focus:outline-none p-2 w-full border focus:border-primary rounded"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="text-center w-full py-3 text-white px-10 bg-primary rounded-full hover:opacity-90 transition-all">Kirim Pesan</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <footer class="footer py-8 bg-tertiary">
+      <div class="container mx-auto px-3">
+        <div class="footer-content text-center">
+          <a href="#" class=" text-white">Ambulance Sijagur Reborn Kota Bandung &copy; 2023</pc>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/jquery/jquery.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
